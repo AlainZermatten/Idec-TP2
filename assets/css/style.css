@@ -1,0 +1,19 @@
+header {
+    height: 60px;
+    max-width: 1200px;
+    background-color: #14597f;
+}
+.logo{
+    height: 60px;
+    float: left;
+}
+nav{
+    float: right;
+}
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+}
