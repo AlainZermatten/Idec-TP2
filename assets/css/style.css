@@ -14,7 +14,6 @@ main{
     max-width: 1200px;
     padding-left: 20px;
     padding-right: 20px;
-    flex: 1 0 auto;
     display: flex;
 }
 
@@ -36,6 +35,14 @@ body{
     background-color: #1fb5e9;
     transition-timing-function: ease-out;
     transition-delay: 0.2s;
+}
+
+/* class form-control*/
+
+.form-control input{
+    border: solid 1px #999999;
+    border-radius: 4px;
+    padding: 5px;
 }
 
 /* Entête */
@@ -104,7 +111,7 @@ footer p{
 
 #home-img{
     float: right;
-    width: 60%;
+    width: 50%;
 }
 
 /* Page des produits */
@@ -113,7 +120,6 @@ footer p{
 
 .panneau-principal{
     width: 75%;
-    background-color: red;
 }
 
 .panneau-principal h1 + p{
@@ -147,17 +153,147 @@ footer p{
 
 .barre-laterale{
     width: 25%;
-    padding-right: 10px;
-    background-color: blue;
+    padding-right: 20px;
+}
+
+#product-categories, #product-criteria{
+    border: solid 1px #999999; 
+    border-radius: 4px;
+}
+
+#product-categories button, #product-criteria button{
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
+
+#product-categories button:last-child, #product-criteria button:last-child{
+    border-bottom: none;
 }
 
 .barre-laterale section div button{
+    background-color: #ffffff;
+    display: block;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
     border: solid 1px #999999;
-    border-radius: 4px;
 }
 
 .barre-laterale section div button:hover{
     background-color: #f3f3f3;
     transition-timing-function: ease-out;
     transition-delay: 0.2s; 
+}
+
+.barre-laterale section div .selected{
+    background-color: #ddf2fb; 
+}
+
+/* Page d'un produit */
+
+#product-page{
+    display: flex;
+}
+
+.colonne-G{
+    width: 50%;
+}
+
+.colonne-G img{
+    width: 100%;
+}
+
+.colonne-D{
+    width: 50%;
+    display: inline-block;
+    text-align: justify;
+}
+
+.colonne-D form{
+    float: right;
+}
+
+#caracteristic{
+    border-bottom: dashed 1px #999999;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+/* Page de contact */
+
+#contact-page{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#ctc-top{
+    width: 100%;
+}
+
+#col-ctc-g{
+    width: 33.2%;
+    height: 80%;
+    text-align: center;
+    border-top: solid 1px #999999;
+    border-left: solid 1px #999999;
+    border-bottom: solid 1px #999999;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+#col-ctc-c{
+    width: 33.2%;
+    height: 80%;
+    text-align: center;
+    border-top: solid 1px #999999;
+    border-bottom: solid 1px #999999;
+}
+#col-ctc-d{
+    width: 33.2%;
+    height: 80%;
+    text-align: center;
+    border-top: solid 1px #999999;
+    border-right: solid 1px #999999;
+    border-bottom: solid 1px #999999;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/* Page du panier d'achats */
+#shop-cart-page{
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-cart-page table tbody tr td{
+    background-color: red;
+}
+
+/* Page de commande */
+#order-page{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#order-page h1{
+    width: 100%;
+    background-color: cyan;
+}
+#order-page section h2{
+    background-color: chartreuse;
+}
+
+#order-form section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+
+.col-order div{
+    flex-wrap: wrap;
+    background-color: red;
 }
